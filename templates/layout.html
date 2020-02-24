@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .inactive{background-color:white}
+        .active{background-color:aquamarine}
+    </style>
+</head>
+<body>
+    <nav>
+        {{render('home',['teacher','admin'],'Home Page')}} |
+        {{render('course_page',['teacher','admin'],'Course Page')}} |
+        {{render('admin_page',['admin'],'Admin Page')}}
+    </nav>
+    {% block body %}
+    {% endblock %}
+</body>
+</html>
